@@ -1,0 +1,34 @@
+#cloud-config-mkdocs-system
+
+groups:
+  - ubuntu: [root,sys]
+  - dpro42-group
+
+users:
+  - default
+  - name: spiderman
+    gecos: Peter Parker
+    shell: /bin/bash
+    primary_group: dpro42-group
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    lock_passwd: false
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAA-etc (replace with your key here)
+
+runcmd:
+  - touch /home/spiderman/hello.txt
+  - echo "Hello! and welcome to this server! Destroy me when you are done!" >> /home/spiderman/hello.txt
+  - sudo apt-get update
+  - sudo apt install apache2 -q -y
+  - sudo apt install python3-pip -y
+  - sudo pip install mkdocs
+  - sudo mkdir /home/spiderman/mkdocs
+  - cd /home/spiderman/mkdocs
+  - sudo mkdocs new mkdocs-project
+  - cd mkdocs-project
+  - sudo mkdocs build
+  - sudo rm /var/www/html/index.html
+  - sudo cp -R site/* /var/www/html
+  - sudo systemctl restart apache2
+  

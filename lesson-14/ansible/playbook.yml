@@ -1,0 +1,6 @@
+- hosts: nginx
+  tasks:
+  - name: install nginx
+    package:
+      name: nginx
+      state: latest

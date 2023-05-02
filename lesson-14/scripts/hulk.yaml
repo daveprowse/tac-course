@@ -1,0 +1,23 @@
+#cloud-config-mkdocs-system
+
+groups:
+  - ubuntu: [root,sys]
+  - ansible-group
+
+users:
+  - default
+  - name: hulk
+    gecos: Dr. Banner
+    shell: /bin/bash
+    primary_group: ansible-group
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    lock_passwd: false
+    ssh_authorized_keys:
+    # Enter your key here:
+      - ssh-ed25519 AAAA
+
+runcmd:
+  - touch /home/hulk/hello.txt
+  - echo "HULK SMASH WHEN DONE!!" >> /home/hulk/hello.txt
+  - sudo apt update
