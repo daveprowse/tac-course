@@ -15,7 +15,7 @@ variable "vpc_cidr" {
 variable "vpc_azs" {
   description = "Availability zones for VPC"
   type        = list(string)
-  default     = ["us-west-2a", "us-west-2b", "us-west-2c"]
+  default     = ["us-east-2a", "us-east-2b", "us-east-2c"]
 }
 
 variable "vpc_private_subnets" {
@@ -41,6 +41,6 @@ variable "vpc_tags" {
   type        = map(string)
   default = {
     Terraform   = "true"
-    Environment = "dev"
+    Environment = "testing"
   }
 }

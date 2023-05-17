@@ -1,28 +1,29 @@
 # Working with Public Modules
-**Scenario:** Setup an S3 bucket with a two-webserver cluster using common publicly available modules and a local module that multiple users can work with.
+**Scenario:** Setup a three-server cluster using common publicly available modules that multiple users can work with.
 
-> IMPORTANT! This lab is built to work in the us-west-2 AWS region. It will not function if you change the region (without changing several other parameters in different files.)
+> IMPORTANT! This lab will incur a cost. If you do not want your credit card to be charged, do not apply the infrastructure!
+> Due to the amount of resources that are being created, it could cost a dollar or more. 
+
+> Note: This lab is built to work in the us-east-2 AWS region. It will not function if you change the region (without changing several other parameters in various files.)
 
 # Procedure
-This is a longer lab so I broke it up into subsections. Take your time and analyze the modules and code as you go.
+This is a longer lab, so I broke it up into subsections. Take your time and analyze the modules and code as you go.
 
 ## Setup and Analysis
 
 Make sure your terminal is set to work in the part-B directory.
 
-Analyze the main.tf file. It calls on three modules:
+> Note: This could be known as our "root module".
+
+Analyze the main.tf file. It calls on two modules:
 
     --> main.tf ↓
 
       -----> vpc
 
       -----> ec2_instances
-
-      -----> website_s3_bucket
-
-vpc and ec2_instances will be downloaded from the Terraform Registry. website_s3_bucket is already built and exists locally in the modules directory. 
-
-Change the bucket name to something unique that you would like to use. 
+    
+vpc and ec2_instances will be downloaded from the Terraform Registry. 
 
 ---
 ## Get the Remote Modules
@@ -33,7 +34,7 @@ You will see that this downloads the vpc and aws_instances modules into the .ter
 - https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
 - https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/latest
 
-Analyze the local module at /module/aws-s3-static-website-bucket. This will create a bucket that houses the two-instance cluster. Also note that there are two .html files located in the www directory. We will upload these later.
+Analyze the two modules. You will note that they contain main.tf, variables.tf, and outputs.tf files. These modules contain every input and output that you could possibly ever want for working with AWS. However, we don't need to use *all* of them. We only specify the items we need in our main.tf in the root module.
 
 ---
 ## Run your Terraform Commands
@@ -44,53 +45,27 @@ Run `terraform validate`
 
 Run `terraform apply`
 
-Note the outputs. These show the bucket name which you will need to upload files.
+That should create a three instance cluster of servers
+
+> Note: We could later use these with an S3 web server bucket. The bucket could encompass the entire cluster, and therefore, any files written to the bucket would be mirrored to each instance in the cluster.
 
 ---
 ## Verify and Analyze the Configuration
 
-Verify the new instances in the AWS console. Make sure you are viewing the us-west-2 region (oregon, US).
+Verify the new instances in the AWS console. 
 
-Open a browser and go to the actual website. It will use the following naming convention:
+View the VPC and subnets.
 
-%bucket-name%.s3-website-us-west-2.amazonaws.com
-
-See if the site is accessible.
+Do further analysis of the variables used in the root module and in the downloaded modules. 
 
 ---
-## Upload Files to the Site. 
-Use the `terraform output` command with variable to specify the bucket name. Example:
 
-```bash
-aws s3 cp modules/aws-s3-static-website-bucket/www/ s3://$(terraform output -raw website_bucket_name)/ --recursive
-```
-> Note: if you are using FISH as your shell, you may have to remove the $.
-
-Refresh the webpage and see if the site can display the index.html page and also an error page. 
-
-At this point you should have a working website that is mirrored to two different AWS instances. 
-
----
 ## Cleanup!
-########################################################
-
-**IMPORTANT!!** 
-Delete the files and destroy the bucket when you are done so that you don't incur any charges!
-
-########################################################
-
-
-Delete the files
-
-```bash
-aws s3 rm s3://$(terraform output -raw website_bucket_name)/ --recursive
-```
-
-Destroy the bucket and the rest of the Terraformed infrastructure:
+Destroy the Terraformed infrastructure:
 
 `terraform destroy`
 
-> IMPORTANT! Verify at the AWS console that the S3 bucket and the EC2 instances were destroyed.
+> IMPORTANT! Verify at the AWS console that the EC2 instances were destroyed.
 
 ---
 ## *Fantastic! You RULE!*

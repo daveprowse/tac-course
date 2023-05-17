@@ -18,9 +18,9 @@ This time, you will be writing some of the code line by line so that you can get
 ## Take a look at the Terraform Registry
 https://registry.terraform.io/
 
-Search for the AWS provider and then, in the documentation, search for "aws_security_group". 
+Search for the AWS provider and then, in the documentation, search for "aws_security_group". Spend a few minutes analyzing the documentation about security groups.
 
-## Validate and create your infrastructure
+## Initialize, validate and create your infrastructure
 Initialize, format, and validate your code. Then, create the infrastructure. Use terraform commands from memory.
 
 > NOTE: Use the help system and your notes if you get stuck! If you get super-stuck, view the main.tf file in the solution directory.

@@ -18,11 +18,19 @@ alias ta='terraform apply'
 > !! Important: Be careful when setting up an alias to `terraform apply -auto-approve` because this executes the deployment without asking for confirmation. BE SURE TO RUN `terraform plan` FIRST!!!
 
 ## In Fish
-In the terminal type `fish_config`. That will open your web browser to the Fish configuration tabs. 
+> Note: In Fish, aliases are referred to as "abbreviations".
 
-Go to the "abbreviations" tab and add as many abbreviations as you like!
+In the terminal, use the `abbr` command. 
+
+For example, to add an abbreviation called `ta` which will map to the `terraform apply` command, use the following syntax:
+
+`abbr --add ta terraform apply`
+
+To show your abbreviations, use the `abbr --show` command.
 
 I use this and it speeds up my workflow by one million percent. Literally.
+
+> Note: More about the `abbr` command: https://fishshell.com/docs/current/cmds/abbr.html
 
 ---
 ## *Shortcuts are good!*

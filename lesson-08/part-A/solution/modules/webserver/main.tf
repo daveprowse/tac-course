@@ -10,7 +10,7 @@ resource "aws_subnet" "web_subnet" {
 resource "aws_instance" "webserver" {
   ami = var.ami
   instance_type = var.instance_type
-  subnet_id = aws_subnet.webserver.id
+  subnet_id = aws_subnet.web_subnet.id 
 
   tags = {
     Name = "${var.webserver_name} webserver"

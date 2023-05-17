@@ -33,11 +33,13 @@ Access main.tf and add the following blocks:
 - resource block for an aws_instance named "webserver". In this block call three variables:
   - `ami           = var.ami`
   - `instance_type = var.instance_type`
-  
+- Add a subnet id argument: 
+  - `subnet_id     = aws_subnet.web_subnet.id`
+
+
+
   And in tags, 
   - `Name          = "${var.webserver_name} webserver"`
-- Add a subnet id argument: 
-  - `subnet_id     = aws_subnet.webserver.id`
 
 Save your work!
 
@@ -93,12 +95,14 @@ Save your work.
 
 This is your working directory. Now you should be able to initialize, validate, plan, and apply your infrastructure. Good luck!
 
+> Note: For additional practice, consider repeating the process for the user2-config directory, but modify the module name, the "webserver_name", and use the "us-west-2" region for this user so that it is separated from the first user.
+
 ## Check your work
 - Verify that the instance is running in the AWS console.
 - Analyze the state file.
 
 ## Destroy
-When you are finished, be 100% sure to destroy your work with the `terraform destroy` command.
+When you are finished, be 100% sure to destroy your work with the `terraform destroy` command. If you created a second user, be sure to check that user's AWS region and destroy any additional instances associated with that user, or any other users. 
 
 ---
 ## *Superb! Another "build & destroy" complete.*
