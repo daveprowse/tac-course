@@ -1,8 +1,12 @@
-# tac-course  !!! WORK IN PROGRESS  !!!
-Exercises for the HashiCorp Terraform Associate Complete Video Course
+# Terraform Video Course  !!! WORK IN PROGRESS  !!!
+By Dave Prowse
 
-This repository contains the companion labs for the **Hashicorp Terraform blah blah blah...**
+https://prowse.tech
 
-They are designed to be followed when watching the corresponding videos. 
-O'Reilly link: *waiting on link*
-Pearson link: 
+https://discord.gg/mggw8VGzUp 
+
+Within this repository you will find companion labs for the HashiCorp Terraform Associate Complete Video Course
+
+The labs are designed to be followed when watching the corresponding videos. 
+
+Enjoy!
