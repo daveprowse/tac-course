@@ -4,3 +4,11 @@
     package:
       name: nginx
       state: latest
+  - name: Clone GitHub repository - HTML5-Asteroids
+    git:
+      repo: https://github.com/dmcinnes/HTML5-Asteroids
+      dest: /home/hulk/asteroids
+      clone: yes
+      update: yes
+  - name: Copy repo to NGINX HTML directory
+    copy: src=/home/hulk/asteroids/ dest=/var/www/html remote_src=yes

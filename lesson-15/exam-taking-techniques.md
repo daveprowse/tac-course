@@ -75,7 +75,7 @@ Sometimes a person taking a test just doesn’t know the answer; it happens to e
 
 **Don’t let one question beat you!** 
 
-Don’t let yourself get stuck on one question, especially the performance-based questions. Skip it (flag it) and return to it later. When you spend too much time on one question, the brain gets sluggish. The thing with these exams is that you either know the content or you don’t. And don’t worry too much about it; chances are you are not going to get a perfect score. Remember that the goal is only to pass the exams; how many answers you get right after that is irrelevant. If you have gone through this book thoroughly, you should be well prepared. You should have plenty of time to go through all the exam questions with time to spare to return to the ones you skipped and marked.
+Don’t let yourself get stuck on one question. Skip it (flag it) and return to it later. When you spend too much time on one question, the brain gets sluggish. The thing with these exams is that you either know the content or you don’t. And don’t worry too much about it; chances are you are not going to get a perfect score. Remember that the goal is only to pass the exams; how many answers you get right after that is irrelevant. If you have gone through this book thoroughly, you should be well prepared. You should have plenty of time to go through all the exam questions with time to spare to return to the ones you skipped and marked.
 
 
 **If all else fails, guess** 
@@ -101,5 +101,7 @@ In closing, confidence is the key when taking an exam.
 I wish you the best of luck on the exam. But really... it's skill that you need, and at this point, it's skill that you possess. Use it. 
 
 I love to hear from my students when they pass an exam, so please drop me a line at my website or my Discord server and let me know about your good fortune!
+
 https://prowse.tech
-https://discord.gg/r7emN5HPsq
+
+https://discord.com/invite/mggw8VGzUp

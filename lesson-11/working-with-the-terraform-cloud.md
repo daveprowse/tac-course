@@ -12,12 +12,12 @@ https://app.terraform.io/public/signup/account
 
 You will need a valid email address to validate your account.
 
-> Note: You will also need to use a strong password. Might I suggest KeePass as your password vault: https://keepass.info/download.html. It's heavily encrypted, and local.
+> Note: You will also need to use a strong password. Might I suggest KeePass, a KeePass derivative, or other similar locally stored password vault.
 
 ## Configure TC
-- Select CLI-driven workflow
 - Create a new organization name (it must be unique!)
 - Name and describe your first workspace
+- Select CLI-driven workflow
 
 ## Configure the main.tf file
 - Copy the example code from the overview webpage to the main.tf file (before the rest of the existing code).
@@ -58,6 +58,14 @@ You will note that we are employing variables.
   - Hashicorp Vault (highly recommended)
 
   I chose to use terraform.tfvars in this lab for two reasons: 1. We can run everything locally (and without having to incorporate new technologies); and 2. The terraform.tfvars file is meant for this purpose and can be added to your .gitignore file. However, keep in mind that it might not be the best option in team environments. In team scenarios, TC environment vars and/or Vault (or other secrets management tool) is recommended. 
+
+  For example, if you wanted to input your AWS credentials into environment variables in the Terraform Cloud, you would use the following naming conventions:
+  ```bash
+  AWS_ACCESS_KEY_ID="<accesskey>"
+  AWS_SECRET_ACCESS_KEY="<secretkey>"
+  ```
+  > Note: Be sure to set the "sensitive" flag for these!
+  For more information on the various credentials for different providers, see: https://developer.hashicorp.com/terraform/cloud-docs/workspaces/variables#environment-variables
 
 ---
 

@@ -1,5 +1,5 @@
-# terraform import
-It is possible to import existing infrastructure into your current configuration (state file). This optional lab shows the basics of how to do this. Let's use an AWS instance as an example.
+# Importing Infrastructure
+It is possible to import existing infrastructure into your current configuration (state file). This lab shows the basics of how to do this. Let's use an AWS instance as an example.
 
 1. Create an AWS instance. 
   
@@ -23,11 +23,7 @@ It is possible to import existing infrastructure into your current configuration
 
     Include the standard Terraform block and AWS provider block that we have used previously in this course. 
 
-3. Initialize the directory.
-
-    Run `terraform init` to initialize your directory. Make sure the command runs properly with no errors. 
-
-4. Add the resource to be imported.
+3. Add the resource to be imported.
 
     In main.tf add the following resource block:
     ```
@@ -42,6 +38,10 @@ It is possible to import existing infrastructure into your current configuration
     ```
 
     Save the file.
+
+4. Initialize the directory.
+
+    Run `terraform init` to initialize your directory. Make sure the command runs properly with no errors. 
 
 5. Import the resource from AWS.
 
@@ -95,7 +95,7 @@ https://developer.hashicorp.com/terraform/tutorials/state/state-import
 
 What would happen if you deleted the state file and then tried to apply the configuration? Hmmm?
 
-You might also ask: "What about exporting?" Well, there is no `terraform export` command but you can certainly export resources from a cloud provider into Terraform.
+You might also ask: "What about exporting?" Well, there is no `terraform export` command, but you can certainly export resources from a cloud provider into Terraform.
 
 ---
 ## *Excellent ^*

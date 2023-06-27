@@ -17,6 +17,13 @@ In this lab you will create a basic instance on AWS. You will need an AWS accoun
   `terraform plan`
 
 - Create the infastructure with the `terraform apply` command.
+
+> Important! For this lab you will need to have a default VPC and default subnet within your AWS account. These are often created automatically for you. If not, you can create them in the VPC section of the AWS console. For example:
+> - VPC: https://us-east-2.console.aws.amazon.com/vpc/home?region=us-east-2#Home:
+> - Subnet: https://us-east-2.console.aws.amazon.com/vpc/home?region=us-east-2#subnets:
+
+> Be sure to have a working VPC and subnet. If you are working in a different region, be sure to create the VPC and subnet within your region.
+
 - Verify the infrastructure at the AWS console.
 - Analyze the "state" file. This is called "terraform.tfstate".
 - Destroy the infrastructure with the `terraform destroy` command.

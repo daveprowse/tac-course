@@ -2,6 +2,6 @@
 
 This lab is broken into two parts:
 - In Part A we code a local module line for line.
-- In Part B we re-use two popular modules from the Terraform registry (as well as a pre-existing local module.)
+- In Part B we re-use two popular modules from the Terraform registry (VPC and EC2 Instances.)
 
-> NOTE: The solutions for each part are in the solution directories.
+> NOTE: The solution for Part A is in the solution directory. Part B is its own solution.

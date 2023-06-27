@@ -13,7 +13,7 @@ You will be creating two sets of infrastructure, each with different parameters.
 ---
 
 ## Create the Configuration Files
-Build Two terraform files.
+Build two terraform files.
   - main.tf 
   - variables.tf
 
@@ -41,6 +41,8 @@ Every Terraform directory has a default workspace (called "default"). View it no
 `terraform workspace list`
 
 Note the * next to "default". The asterisk tells us which workspace we are currently working in. Right now, it is the only workspace. "Default" always exists, and cannot be deleted. 
+
+> Note: You could also see what workspace you are working by using the `terraform show` command.
 
 Now, let's create two other workspaces for our testing:
 

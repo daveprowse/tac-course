@@ -1,4 +1,5 @@
 # Example of multiple providers: AWS and Linode
+# This is non-functional code for analytical purposes only. 
 
 ## In the terraform block we specify the AWS and Linode sources
 ## for the provider plugins and the versions.

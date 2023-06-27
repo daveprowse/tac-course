@@ -1,7 +1,7 @@
 # Exam Details and Links
 This document gives some basic details about the actual HashiCorp Terraform Associate Certification, and some important links. Keep in mind that some of the details and links can change over time.
 
-- Last updated: 2/21/2023
+- Last updated: 6/27/2023
 
 ## Exam Details
 - Format: Online Proctored

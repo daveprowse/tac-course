@@ -15,9 +15,12 @@ users:
     lock_passwd: false
     ssh_authorized_keys:
     # Enter your key here:
-      - ssh-ed25519 AAAA
+      - ssh-rsa AAAA....
 
 runcmd:
   - touch /home/hulk/hello.txt
   - echo "HULK SMASH WHEN DONE!!" >> /home/hulk/hello.txt
+  - mkdir asteroids
   - sudo apt update
+
+## Create ssh key and copy to Azure VM (may have to do that via the bash script), then copy data
