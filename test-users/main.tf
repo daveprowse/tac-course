@@ -26,7 +26,9 @@ resource "aws_iam_user" "test_user" {
   }
 }
 
-
+# resource "aws_iam_user" "test_user_2" {
+#   name = "test-user-2"
+# }
 
 # This outputs the name of all users created
 output "Name_of_all_users" {

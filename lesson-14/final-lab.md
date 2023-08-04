@@ -44,7 +44,9 @@ The scripts directory contains a cloud-init script that will create a new user a
 ## Analyze the Ansible information
 > Important! Ansible must be installed on your local system. See the following link for your distro: https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-specific-operating-systems
 
-> You will need to have the ansible command set up within your PATH and your user will need to be able to run Ansible commands. That user account should also have administrative permissions (sudo or wheel).
+> If the Linux install via package manager does not work, use PIP: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+
+> You will need to have the `ansible` command set up within your PATH and your user will need to be able to run Ansible commands. That user account should also have administrative permissions (sudo or wheel).
 
 Take a look at the files inside the Ansible directory.
 - ansible.cfg is the main Ansible configuration file. It is called on by automagic.sh by exporting the config variable. It relies on the "hulk" account that was created by the cloud-init script.
