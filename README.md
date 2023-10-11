@@ -5,7 +5,9 @@ https://prowse.tech
 
 https://discord.gg/mggw8VGzUp 
 
-Within this repository you will find companion labs for the HashiCorp Certified Terraform Associate (003) Complete Video Course
+Within this repository you will find companion labs for the HashiCorp Certified Terraform Associate (003) Complete Video Course which is available at:
+- [O'Reilly](https://learning.oreilly.com/videos/hashicorp-certified-terraform/9780138195366/)
+- [InformIT](https://click.linksynergy.com/deeplink?id=g//2PZbywdw&mid=24808&murl=https://www.informit.com/store/hashicorp-certified-terraform-associate-003-video-course-9780138195397)
 
 The labs are designed to be followed when watching the corresponding videos. 
 
@@ -23,12 +25,14 @@ Enjoy!
 > - To run the labs in this course I use a Debian Linux Virtual Machine with Visual Studio Code installed. I recommend a minimum of 2 CPUs and 4 GB of RAM as well as 30 GB storage space. 
 > - Consider removing the hidden .git directory if you don't want to have Git tracking enabled for the repository. 
 
+---
+
 ## Terraform Titles and Lesson Numbering
 The files offered here support 3 separate titles.
 
 - HashiCorp Certified Terraform Associate (003) - This title is an all-inclusive study resource covering all objectives in the exam, a pre-test, system set up lesson, and an exam prep and final quiz. 
-- Essential Terraform in AWS - This title covers key concepts, configurations and resources. 
-- Terraform Core Functionality - This title dives into language specifics and usage.
+- [Essential Terraform in AWS](https://www.informit.com/store/essential-terraform-in-aws-video-course-9780138312190#) - This title covers key concepts, configurations and resources. 
+- [Terraform Core Functionality](https://www.informit.com/store/terraform-core-functionality-video-course-9780138312732) - This title dives into language specifics and usage.
 
 The numbering of the lessons is synced to the main HashiCorp Certified Terraform Associate (003) video course. Due to this, the numbering will be different if you are learning with one of the other courses. Don't worry if you are missing something. All files are there and I have provided a table below detailing a lesson mapping that you should use in each course. 
 
