@@ -39,7 +39,9 @@ output "ebs_block_device" {
 >
 > but that is the legacy sequence - [*] is recommended.
 
-- Initialize and apply your code. It should result in two volume IDs displayed in the terminal. Check these against the state file and against the AWS console. 
+- Initialize and apply your code. It should result in two volume IDs displayed in the terminal. Check these against the state file and against the AWS console.
+
+> Note: If you use WSL, containers, or another secondary Linux-based system instead of a full virtual machine, then you might not receive complete results from the `terraform output`. To fix this, increase the AWS provider version to 5.0 or higher. Or, use proper virtual machines within a virtualization system such as VirtualBox, VMWare Workstation, KVM, Proxmox, etc...
 
 - **Destroy the infrastructure**
 
