@@ -1,9 +1,9 @@
 # HashiCorp Certified Terraform Associate (003)
-By Dave Prowse
+©️ Copyright Dave Prowse 2024
 
-https://prowse.tech
+[Website](https://prowse.tech)  |  [Discord](https://discord.gg/mggw8VGzUp)
 
-https://discord.gg/mggw8VGzUp 
+---
 
 Within this repository you will find companion labs for the HashiCorp Certified Terraform Associate (003) Complete Video Course which is available at:
 
@@ -20,7 +20,7 @@ https://learning.oreilly.com/certifications/9780138190408/
 
 You should see two 80-question practice exams. However, you must be a member of O'Reilly to view them.
 
-Enjoy!
+**Enjoy!**
 
 ## Notes: 
 > - To run the labs in this course I use a Debian Linux Virtual Machine with Visual Studio Code installed. I recommend a minimum of 2 CPUs and 4 GB of RAM as well as 30 GB storage space. 
