@@ -7,11 +7,11 @@ resource "aws_instance" "lesson_06" {
     aws_security_group.sg_https.id,
     aws_security_group.sg_http.id
   ]
-  
+
   user_data = file("../scripts/apache-mkdocs.yaml")
 
   tags = {
-    Name                  = "Lesson_06-Cloud-Init"    
+    Name = "Lesson_06-Cloud-Init"
   }
 }
 
