@@ -22,7 +22,7 @@ runcmd:
   - sudo apt-get update
   - sudo apt install apache2 -q -y
   - sudo apt install python3-pip -y
-  - sudo pip install mkdocs
+  - sudo pip install mkdocs --break-system-packages
   - sudo mkdir /home/spiderman/mkdocs
   - cd /home/spiderman/mkdocs
   - sudo mkdocs new mkdocs-project
