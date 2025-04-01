@@ -1,5 +1,6 @@
 # HashiCorp Certified Terraform Associate (003)
-©️ Copyright Dave Prowse 2024
+
+©️ Copyright Dave Prowse
 
 [Website](https://prowse.tech)  |  [Discord](https://discord.gg/mggw8VGzUp)
 

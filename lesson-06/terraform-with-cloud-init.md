@@ -41,11 +41,15 @@ At this point, the system should install an Apache web server, install pip, inst
   http://<ipaddress>
   ```
 
+  You should see the default mkdocs project running on the web server. 
+
 > Tip: Automatically open the browser to the IP address of the instance from the VSCode terminal. Example: `firefox <ipaddress>`. Replace the browser with your tool of choice!
 
 - Play around with it! You did good!
 
-- When complete, be sure to destroy the infrastructure.
+> Note: to see a *real* example of mkdocs in action, check out the Draw On Gnome extension: https://daveprowse.github.io/Draw-On-Gnome/.
+
+**- When complete, be sure to DESTROY the infrastructure.**
 
 ---
 ## *That was a lot of tech! Great job!*
