@@ -21,8 +21,10 @@ runcmd:
   - echo "Hello! and welcome to this server! Destroy me when you are done!" >> /home/spiderman/hello.txt
   - sudo apt-get update
   - sudo apt install apache2 -q -y
-  - sudo apt install python3-pip -y
-  - sudo pip install mkdocs
+  ## 4/1/2025: replaced pip install of mkdocs with apt-get install
+  # old - sudo apt install python3-pip -y
+  # old - sudo pip install mkdocs
+  - sudo apt-get install mkdocs -q -y
   - sudo mkdir /home/spiderman/mkdocs
   - cd /home/spiderman/mkdocs
   - sudo mkdocs new mkdocs-project
