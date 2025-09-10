@@ -27,7 +27,7 @@ To work with Microsoft Azure, first do the following:
 
     When complete, verify that it was installed properly by checking the version:
 
-    `az -h`
+    `az --version`
 
     The `az` command is what you will use when working in the Azure CLI. 
 
