@@ -30,6 +30,10 @@ resource "azurerm_subnet" "subnet_a" {
   address_prefixes     = ["10.0.2.0/24"]
 }
 
+# The following public_ip block has two changes compared to the original course code.
+# We've modified the allocation_method from "Dynamic" to "Static"
+# and added a "sku" argument and gave it the value "Standard".
+
 resource "azurerm_public_ip" "terraform_public_ip" {
   name                = "PublicIP"
   location            = azurerm_resource_group.rg_1.location
