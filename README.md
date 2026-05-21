@@ -13,6 +13,15 @@ Within this repository you will find companion labs for the HashiCorp Certified 
 
 The labs are designed to be followed when watching the corresponding videos.
 
+---
+
+‼️ **IMPORTANT**  ‼️ The new 004 version of the video course is available!
+
+- O'Reilly (full video course) - [link](https://learning.oreilly.com/course/hashicorp-certified-terraform/9780135909560/)
+- GitHub repository for the 004 - [link](https://github.com/daveprowse/terraform-004)
+
+---
+
 During this course I use a Debian Linux virtual machine for the labs. If you want to follow along with me more accurately, consider using that or your favorite Linux distribution. See [this link](https://prowse.tech/linux-installs/) for detailed step-by-step instructions (and videos) on how to install Linux.
 
 Also, be sure to check out the companion practice exams here:  
